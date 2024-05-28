@@ -14,4 +14,4 @@ console.log(Number.parseInt(s).toFixed(2));// convert integer value
 // while using tofixed number converted to string
 
 console.log(Number.isNaN(s)); // used to find not a number
-console.log(isNaN(s)); 
+console.log(isNaN(s));
