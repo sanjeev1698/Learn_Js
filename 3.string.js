@@ -17,4 +17,4 @@ console.log(t.includes("panda"));// it check the containg letters,words boolean 
 
 console.log(t.slice(3,5));// form the sentence
 
-console.log(t.split(" "));// this used to spilt thye words
+console.log(t.split(" "));// this used to spilt thye words 
