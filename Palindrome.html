@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Palindrome Checker</title>
+</head>
+<body>
+    <h1>Palindrome Checker</h1>
+    <p>Enter a sentence to check if it's a palindrome:</p>
+    <input type="text" id="sentenceInput">
+    <button onclick="checkPalindrome()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function isPalindrome(sentence) {
+            const processedSentence = sentence.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+            const reversedSentence = processedSentence.split("").reverse().join("");
+            return processedSentence === reversedSentence;
+        }
+
+        function checkPalindrome() {
+            const input = document.getElementById("sentenceInput").value;
+            const resultElement = document.getElementById("result");
+            
+            if (isPalindrome(input)) {
+                resultElement.textContent = "It's a palindrome!";
+            } else {
+                resultElement.textContent = "It's not a palindrome.";
+            }
+        }
+    </script>
+</body>
+</html>
