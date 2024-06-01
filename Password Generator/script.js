@@ -4,7 +4,7 @@ const clipboard = document.getElementById("clipboard");
 let pwd_length = document.getElementById("slider");
 let copy_text = document.getElementById("copy_text");
 let string = "ABCDEFGHIJKLMNOPQRSTUVWXYZacdefghijklnopqrstuvwxyz0123456789";
-
+ 
 generate.addEventListener("click", () => {
   let password = "";
   let checked = document.getElementById("checkbox").checked;
