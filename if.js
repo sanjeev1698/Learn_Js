@@ -4,7 +4,7 @@ let c = 35;
 let test = prompt('Enter the Number:');
 let result;
 
-if (test >= a){
+if (test >= a){ 
     result = "A";
 }
 else if(test >= b){
